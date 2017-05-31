@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>打字游戏</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            list-style: none;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: url("img/timg.jpg");
+        }
+        .box{
+            width: 100px;
+            height: 150px;
+            background: url("img/jiangluo.png") no-repeat;
+            background-size: contain;
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            line-height: 65px;
+            font-size: 40px;
+        }
+        .open{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border: 2px solid #333;
+            border-radius:10px;
+            font-size: 50px;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 0px 0px 15px 5px #cccccc;
+            cursor: pointer;
+        }
+        .HP{
+            width: 200px;
+            height: 50px;
+            background: #fff;
+            border:3px solid #999;
+            border-radius: 20px;
+            /*text-align: center;*/
+            line-height: 50px;
+            font-size: 30px;
+            color: #000;
+            position: absolute;
+            left: 50px;
+            top: 20px;
+        }
+        .HP>img{
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+        .guan{
+            width: 200px;
+            height: 50px;
+            background: #ffff00;
+            border:3px solid #999;
+            border-radius: 20px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 30px;
+            position: absolute;
+            top:20px;
+            left: 50%;
+            z-index: 9999;
+            transform: translateX(-50%);
+        }
+        .next{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top:50%;
+            left: 40%;
+            transform: translate(-50%,-50%);
+            border: 2px solid #333;
+            border-radius:10px;
+            font-size: 40px;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 0px 0px 15px 5px #cccccc;
+            display: none;
+            z-index: 9999;
+            cursor: pointer;
+        }
+        .top{
+            width: 200px;
+            height: 100px;
+            position: absolute;
+            top:50%;
+            right: 30%;
+            transform: translate(-50%,-50%);
+            border: 2px solid #333;
+            border-radius:10px;
+            font-size: 40px;
+            text-align: center;
+            line-height: 100px;
+            box-shadow: 0px 0px 15px 5px #cccccc;
+            display: none;
+            z-index: 9999;
+            cursor: pointer;
+        }
+        .defeng{
+            width: 200px;
+            height: 50px;
+            background: #005599;
+            border:3px solid #999;
+            border-radius: 20px;
+            /*text-align: center;*/
+            line-height: 50px;
+            font-size: 30px;
+            position: absolute;
+            right: 50px;
+            top: 20px;
+            color: #ffffff;
+        }
+        .defeng>img{
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="open">开始</div>
+    <div class="HP"><img src="img/xin.png" alt="">X<span></span></div>
+    <div class="guan">关卡：<em style="font-style: normal"></em></div>
+    <div class="defeng"><img src="img/zhuanshi.png" alt="">：<i style="font-style: normal"></i></div>
+    <div class="next">重新开始</div>
+    <div class="top">关闭游戏</div>
+</body>
+</html>
+
+<script>
+
+    /*
+     * 属性
+     *     a-z
+     *     个数
+     *     */
+
+window.onload=function(){
+    function Game(){
+        this.charArr=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+        this.charlength=5;
+        this.cw=innerWidth,ch=innerHeight;
+        this.speed=10;
+        this.currentEle=[];
+        this.lefts=[];
+        this.nums=[];
+        this.open1=document.querySelector('.open');
+        this.next=document.querySelector('.next');
+        this.top=document.querySelector('.top');
+        this.sm=10;
+        this.Hp=document.querySelector('span');
+        this.Hp.innerText=this.sm;
+        this.gk=1;
+        this.guan=document.querySelector('em');
+        this.guan.innerText=this.gk;
+        this.score=0;
+        this.def=document.querySelector('i');
+        this.def.innerText=this.score;
+        this.score1=5;
+        this.score2=5;
+    }
+    Game.prototype= {
+        start: function () {
+            this.getElements(this.charlength);
+            this.drop();
+            this.key();
+        },
+        getElements: function (length) {
+            for (let i = 0; i < length; i++) {
+                this.getchar();
+            }
+        },
+        getchar: function () {
+            let num = 0;
+            let ele = document.createElement('div');
+            let leftss = 0;
+            do{
+                num=Math.floor(Math.random()*this.charArr.length);
+            }while(this.checkPoss(num));
+            ele.innerText = this.charArr[num];
+            ele.className = 'box';
+            do {
+                leftss = Math.random() * (this.cw - 400) + 100;
+
+            } while (this.checkPos(leftss));
+            ele.style.top = Math.random() * 100 + 'px';
+            ele.style.left = leftss + 'px';
+            document.body.appendChild(ele);
+            this.currentEle.push(ele);
+            this.lefts.push(leftss);
+            this.nums.push(num);
+        },
+        drop: function () {
+            let self = this;
+            this.t = setInterval(function () {
+                for (let i = 0; i < self.currentEle.length; i++) {
+                    let tops = self.currentEle[i].offsetTop + self.speed;
+                    self.currentEle[i].style.top = tops + 'px';
+                    if (tops > ch - 300) {
+                        document.body.removeChild(self.currentEle[i]);
+                        self.currentEle.splice(i, 1);
+                        self.nums.splice(i, 1);
+                        self.lefts.splice(i, 1);
+                        self.sm--;
+                        self.Hp.innerText = self.sm;
+                        if (self.sm < 0) {
+                            self.sm = 0;
+                            self.Hp.innerText = self.sm;
+                            clearInterval(self.t);
+                            self.next.style.display = 'block';
+                            self.next1();
+                            self.top.style.display = 'block';
+                            self.topl();
+                        }
+                    }
+                }
+                if (self.currentEle.length < self.charlength) {
+                    self.getchar();
+
+                }
+            }, 500)
+        },
+        key: function () {
+            document.body.onkeydown = function (e) {
+                let code = String.fromCharCode(e.keyCode);
+                for (let i = 0; i < this.currentEle.length; i++) {
+                    if (code == this.currentEle[i].innerText) {
+                        document.body.removeChild(this.currentEle[i]);
+                        this.currentEle.splice(i, 1);
+                        this.nums.splice(i, 1);
+                        this.lefts.splice(i, 1);
+                        this.score++;
+                        this.def.innerText = this.score;
+                        if (this.score == this.score1) {  //5   10   20  35   70
+                            this.score1 += this.score2;  //10   20  35
+                            this.score2 += 5;   //10    15    20
+                            this.gk++;
+                            this.guan.innerText = this.gk;
+                            if(this.gk%2 == 0){
+                                this.charlength++;
+                                if (this.charlength > 26) {
+                                    this.charlength = 26;
+                                }
+                            }else{
+                                this.speed++;
+                            }
+                        }
+                    }
+                }
+                if (this.currentEle.length < this.charlength) {
+                    this.getchar();
+                }
+            }.bind(this)
+        },
+        open: function () {
+            this.open1.onclick = function () {
+                this.open1.style.display = 'none';
+                this.start();
+            }.bind(this)
+        },
+        next1: function () {
+            this.next.onclick = function () {
+                this.next.style.display = 'none';
+                this.top.style.display = 'none';
+                while (this.currentEle.length != 0) {
+                    document.body.removeChild(this.currentEle[0]);
+                    this.currentEle.splice(0, 1);
+                    this.lefts.splice(0, 1);
+                    this.nums.splice(0, 1);
+                }
+                this.sm = 10;
+                this.Hp.innerText = this.sm;
+                this.gk = 1;
+                this.guan.innerText = this.gk;
+                this.score = 0;
+                this.def.innerText = this.score;
+                this.speed = 10;
+                this.score1 = 5;
+                this.score2 = 5;
+                this.charlength = 5;
+                this.start();
+            }.bind(this)
+        },
+        topl:function(){
+            this.top.onclick=function(){
+                 window.close();
+            }.bind(this)
+        },
+        checkPos: function (l) {
+            return this.lefts.some(function (value, index) {
+                return l > value - 100 && l < value + 100;
+            })
+        },
+        checkPoss:function (n) {
+            return this.nums.some(function(value,index){
+                return value==n;
+            })
+        }
+
+    }
+    let game=new Game();
+    //    game.start();
+//    game.key();
+    game.open();
+}
+</script>

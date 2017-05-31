@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>棋牌</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    html,body{
+        width: 100%;
+        height:100%;
+        overflow: hidden;
+        background-image: url("img/1.jpg");
+        background-size: contain;
+    }
+    .table{
+        width: 700px;
+        height: 100%;
+        margin: 50px auto;
+        position: relative;
+    }
+    .kapai{
+        width: 90px;
+        height: 120px;
+        position: absolute;
+        background-size: 90px 120px;
+        border: 2px solid #ffffff;
+        cursor: pointer;
+    }
+    .active{
+        border-color: blue;
+    }
+    [class^=move]{
+        width: 70px;
+        height: 30px;
+        background: red;
+        position: absolute;
+        left: 312px;
+        top: 620px;
+        text-align: center;
+        line-height: 25px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+    [class=mover]{
+        top: 680px;
+    }
+</style>
+<body>
+    <div class="table">
+        <div class="move">&gt;</div>
+        <div class="mover">&lt;</div>
+    </div>
+</body>
+</html>
+<script src="jquery-3.2.1.js"></script>
+<script>
+    let arr=['h','c','s','b'];
+    let nUm=[],biao={};
+    let color,num;
+    let move=$('.move');
+    let mover=$('.mover');
+    for(let i=0;i<52;i++){
+        do{
+            color=arr[Math.floor(Math.random()*4)];
+            num=Math.floor(Math.random()*13+1);
+        }while(biao[color + '_' + num])
+        biao[color + '_' + num] =true;
+        nUm.push({color,num});
+    }
+    let index=0;
+    for (let i = 0 ; i <7;i++){
+        for (let j = 0;j <= i;j++){
+            let item=nUm[index];
+            $('<div>')
+                .addClass('kapai')
+                .css('backgroundImage',`url("img/${item.color}${item.num}.png")`)
+                .data('num',item.num)
+                .delay(50*index)
+                .animate({left:300-50*i+100*j,top:70*i})
+                .appendTo('.table')
+                .attr('id',`${i}_${j}`);
+            index++;
+        }
+    }
+    for(;index<nUm.length;index++){
+        let item=nUm[index];
+        $('<div>')
+            .addClass('kapai zuo')
+            .css('backgroundImage',`url("img/${item.color}${item.num}.png")`)
+            .data('num',item.num)
+            .delay(50*index)
+            .animate({left:100,top:600})
+            .appendTo('.table');
+        index++;
+    }
+    $(document).mousedown(false);
+    let first=null;
+    $('.kapai').click(function () {
+        let ids=$(this).prop('id').split('_');
+        let id1=`#${parseInt(ids[0])+1}_${ids[1]}`;
+        let id2=`#${parseInt(ids[0])+1}_${parseInt(ids[1])+1}`;
+        if($(id1).length==1 || $(id2).length == 1){
+            return ;
+        }
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')){
+            $(this).animate({top: '-=20'})
+        }else{
+            $(this).animate({top: '+=20'})
+        }
+
+
+        if(!first){
+            first=this;
+            let aa=$(first).data().num;
+            if (aa == 13){
+                $('.active').animate({left:1000,top:0},function () {
+                    $(this).remove();
+                    first = null;
+                })
+            }
+        }else{
+            let aa=$(first).data().num;
+            let bb=$(this).data().num;
+            if (aa + bb == 13){
+                $('.active').animate({left:1000,top:0},function () {
+                    $(this).remove();
+                    first = null;
+                })
+            }else {
+                $('.active').animate({top: '+=20'},function () {
+                    $(this).removeClass('active');
+                    first = null;
+                })
+
+            }
+        }
+
+    })
+
+    let aa=0;
+    move.on('click',function () {
+        aa++;
+        let zuo=$('.zuo:last');
+        if(zuo.length == 0){
+            return ;
+        }
+        zuo.removeClass('zuo')
+            .addClass('you')
+            .css('zIndex',aa)
+            .animate({left:'+=400'});
+
+    })
+    mover.on('click',function () {
+        let you=$('.you');
+        if(you.length == 0){
+            return ;
+        }
+        for(let i=you.length-1; i>=0;i--){
+            $(you[i]).removeClass('you')
+                .addClass('zuo')
+//                .css('zIndex',aa)
+                .delay(100*i)
+                .animate({left:'-=400',zIndex:'0'});
+
+        }
+    })
+
+
+
+
+
+</script>

@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body{
+    background-image: url("../images/0.jpg");
+    background-size: cover;
+    background-position: center;
+}
+audio{
+    display: none;
+}
+.top{
+    width: 700px;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    margin: 50px auto;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    padding: 50px 0px 200px 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.top>.sing{
+    font-size: 24px;
+}
+.top>.singer{
+    width: 100%;
+    padding: 10px 250px;
+    font-size: 20px;
+    /*text-align: right;*/
+    box-sizing: border-box;
+}
+.top>.lyrics{
+    height: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.top>.lyrics>li{
+    padding: 10px;
+}
+.top>.lyrics>.hot{
+    color: red;
+}
+.bottom{
+    width: 100%;
+    height: 100px;
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 0;
+}
+.inside{
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+}
+.lefts{
+    width: 200px;
+    height: 100%;
+    float: left;
+    line-height: 100px;
+    text-align: center;
+    color: #fff;
+}
+.lefts>i{
+    font-size: 50px;
+    margin: 5px;
+}
+.middle{
+    width: 750px;
+    height: 100%;
+    float: left;
+    margin: 0 25px;
+}
+.middle>.mleft{
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin: 10px 0;
+}
+.middle>.mleft>img{
+    width: 100%;
+    height: 100%;
+}
+.middle>.mright{
+    width: 670px;
+    height: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+    color: #fff;
+}
+.middle>.mright>.mtop{
+    width: 100%;
+    height: 50%;
+
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.middle>.mright>.mtop>.sleft{
+    /*width: 50%;*/
+    height: 100%;
+    line-height: 40px;
+    float: left;
+}
+.middle>.mright>.mtop>.sright{
+    /*width: 50%;*/
+    height: 100%;
+    line-height: 40px;
+    float: right;
+}
+.middle>.mright>.mbottom{
+    width: 100%;
+    height: 50%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.middle>.mright>.mbottom>.speed{
+    width: 100%;
+    height: 5px;
+    background: red;
+    border-radius: 120px;
+    position: relative;
+}
+.middle>.mright>.mbottom>.speed>.speeds{
+    width: 0;
+    height: 100%;
+    background: yellow;
+    border-radius: 120px;
+}
+.middle>.mright>.mbottom>.speed>.speeds>.round{
+    width: 6px;
+    height: 6px;
+    border: 6px solid #fff;
+    border-radius: 50%;
+    background: red;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(-50%,-40%);
+}
+.rights{
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+.rights>.rleft{
+    width: 50px;
+    height: 100%;
+    line-height: 100px;
+    float: left;
+
+}
+.rights>.rleft>i{
+    font-size: 30px;
+    color: #fff;
+    margin: 10px;
+}
+.rights>.rright{
+    width: 100px;
+    height: 100%;
+    line-height: 100px;
+    float: left;
+}
+.rights>.rright>.rpeed{
+    width: 100%;
+    height: 10px;
+    background: #fff;
+    border-radius: 120px;
+    margin-top: 45px;
+}
+.rights>.rright>.rpeed>.rpeeds{
+    width: 100%;
+    height: 100%;
+    background: #333;
+    border-radius: 120px;
+}
+.rights>.rright>.rpeed>.rpeeds>.sound{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ccc;
+    position: absolute;
+    transform: translate(-50%,-10%);
+}

@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.palette{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.top{
+    width: 100px;
+    height: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px auto;
+    background: #8e8e8e;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.round{
+    width: 100px;
+    height: 100px;
+    background: #d7d7d7;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+}
+.round>i:before{
+    font-size: 30px;
+}
+.top>ul{
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+.top>ul>label{
+    display: block;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    background: #d7d7d7;
+    margin: 20px 0;
+}
+.top>ul>label:before{
+    font-size: 30px;
+}
+
+
+
+.left{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #999999;
+    text-align: center;
+    line-height: 60px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 120px;
+}
+.left>label{
+    display: block;
+    width: 80px;
+    height: 80px;
+    float: left;
+    box-sizing: border-box;
+    line-height: 80px;
+}
+
+.bottom{
+    position: absolute;
+    left: 100px;
+    top: 110px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px 5px #ccc;
+}
+.bottom>.mask{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /*background: #ccc;*/
+    z-index: 10;
+}
+.eraserBth{
+    display: none;
+    position: absolute;
+    border:  1px solid #000;
+}
+.caiq{
+    display: none;
+    position: absolute;
+    border: 2px dashed #000000;
+}
+canvas{
+    border: 1px solid #ffffff;
+    background: #fff;
+
+
+}
+img{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    left: 1150px;
+}
+
+

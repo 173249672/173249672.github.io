@@ -44,7 +44,7 @@ $(function(){
         afterLoad:function (anchorLink,index) {
             if(index==1){
                 let cw=$(window).width();
-                if (cw>=500){
+                if (cw>=1200){
                     $('.cover').css('background-size','cover')
                 }else{
                     $('.cover').css('background-size','contain')

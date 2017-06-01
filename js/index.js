@@ -43,6 +43,12 @@ $(function(){
         controlArrowColor:'#212325',
         afterLoad:function (anchorLink,index) {
             if(index==1){
+                let cw=$(window).width();
+                if (cw>=500){
+                    $('.cover').css('background-size','cover')
+                }else{
+                    $('.cover').css('background-size','contain')
+                }
                 $('.cover').animate({top:0},1000);
             }
             if(index==2){

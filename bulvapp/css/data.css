@@ -1,0 +1,434 @@
+*{
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	overflow: hidden;
+}
+html{
+	overflow: hidden;
+	position: relative;
+}
+/*头部开始*/
+.data-box{
+	width: 100%;
+	height: 1rem;
+	background: #0e121e;
+	text-align: center;
+	padding: 0.15rem 0.24rem;
+	box-sizing: border-box;
+	position: relative;
+	top: 0rem;
+	left: 0rem;
+	right: 0rem;	
+}
+.data-box h1{
+	font-size: 0.34rem;
+	color: #fff;
+}
+.data-box h1:before{
+	display: block;
+	content: "";
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	left: 2.97rem;
+	top: 0.4rem;
+}
+.data-box h1:after{
+	display: block;
+	content: "";
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	right: 2.97rem;
+	top: 0.4rem;
+}
+.data-box h2{
+	font-size: 0.24rem;
+	color: #fff;
+}
+.data-box .data-boxson{
+	width: 7.02rem;
+	height: 0.01rem;
+	background: #fff;
+	position: absolute;
+	top: 0rem;
+}
+.data-box .data-boxson:before{
+	display: block;
+	content: "";
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: -0.01rem;
+	left: 0rem;
+}
+.data-box .data-boxson:after{
+	display: block;
+	content: "";
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: -0.01rem;
+	right: 0rem;
+}
+.data-box .data-boxson span:before{
+	display: block;
+	content: "";
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: -0.01rem;
+	left: 0.6rem;
+}
+.data-box .data-boxson span:after{
+	display: block;
+	content: "";
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: -0.01rem;
+	right: 0.6rem;
+}
+/*头部结束*/
+
+
+
+/*私教课程开始*/
+.data-Box{
+	width: 100%;
+	height: 1rem;
+	margin-top: 0.35rem;
+	box-sizing: border-box;
+	padding: 0px 0.24rem;
+	position: relative;
+}
+
+.data-Box .data-Boxson{
+	box-sizing: border-box;
+	width: 4.43rem;
+	height: 0.89rem;
+	border-radius: 1.2rem;
+	background: #ffbf25;
+	border: 1px solid rgba(85,69,53,0.5);
+	padding: 0.13rem;
+	padding-right: 0rem;
+	float: left;
+	position: relative;
+	z-index: 2;
+}
+.data-Box .data-Boxson img:first-child{
+	width: 0.61rem;
+	display: block;
+	float: left;
+	margin-right: 0.1rem;
+}
+.data-Box .data-Boxson img:nth-child(2){
+	width: 1.45rem;
+	display: block;
+	float: left;
+}
+.data-Box .data-Boxson b{
+	color: #545454;
+	font-size: 0.2rem;
+	margin-left: 0.1rem;
+}
+.data-Box .data-Boxson b:nth-child(3):before{
+	content: "";
+	display: block;
+	width: 0.04rem;
+	height: 0.04rem;
+	border-radius: 50%;
+	background: #3ec7e7;
+	position: absolute;
+	left: 2.33rem;
+	top: 0.24rem;
+}
+.data-Box .data-Boxson .rq{
+	width: 0.31rem;
+	height: auto;
+	float: left;
+	margin-top: 0.1rem;
+	margin-right: 0.05rem;
+	overflow: hidden;
+	position: relative;
+}
+.data-Box .data-Boxson .rq img{
+	width: 100%;
+}
+.data-Box .data-Boxson .rq b{
+	font-size: 0.22rem;
+	color: white;
+	position: absolute;
+	top: 0.02rem;
+	left: 0.02rem;
+	right: 0rem;
+	bottom: 0rem;
+	margin: auto;
+	
+}
+
+.data-Box .data-Boxson i{
+	font-style: normal;
+	display: inline-table;
+	float: left;
+	margin:0.15rem 0.05rem 0rem 0.23rem;
+	font-size: 0.22rem;
+	color: #e42537;
+	font-weight: 700;
+}
+
+
+.data-Box .data-Box-son{
+	width: 4.43rem;
+	height: 0.89rem;
+	border-radius: 1.2rem;
+	background: #ffbf25;
+	border: 1px solid rgba(85,69,53,0.5);
+	box-shadow: 0.05rem 0.05rem 0.09rem rgba(209,209,209,0.35);
+	position: absolute;
+	right: 0.24rem;
+	top:0.11rem;
+	padding: 0.22rem 0.22rem 0.22rem 2rem;
+	box-sizing: border-box;
+}
+.data-Box .data-Box-son img:first-child{
+	float: left;
+	display: inline-block;
+	width: 0.5rem;
+	margin-right: 0.1rem;
+}
+.data-Box .data-Box-son b{
+	display: inline-block;
+	color: #545454;
+	font-size: 0.2rem;
+}
+.data-Box .data-Box-son b:after{
+	content: "";
+	display: block;
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #3ec7e7;
+	position: absolute;
+	right: 0.75rem;
+	top: 0.4rem;
+}
+.data-Box .data-Box-son img:last-child{
+	float: right;
+	width: 0.43rem;
+}
+/*私教课结束*/
+
+
+
+/*计步器开始*/
+.data-step{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 0.57rem 0.53rem 0.41rem 0.42rem;
+	line-height: 100%;
+
+}
+.data-step a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+}
+.data-step img{
+	display: block;
+	width: 6.01rem;
+	margin: 0 auto;
+}
+.data-step a .data-stepson{
+	width:100%;
+	height: 1.25rem;
+	/*background: red;*/
+	position: absolute;
+	top: 0rem;
+	bottom: 0.5rem;
+	left: 0rem;
+	right: 0rem;
+	margin: auto;
+	text-align: center;
+}
+.data-step a .data-stepson h2{
+	font-size:0.24rem;
+	color: #1b1e23;
+	margin-bottom: 0.4rem;
+}
+.data-step a .data-stepson h1{
+	font-size: 0.6rem;
+	color: #3f65e8;	
+}    
+.data-step a .data-stepson h3{
+	margin-top: 0.3rem;
+	font-size: 0.24rem;
+	color: #3f65e8;
+}
+/*计步器结束*/
+
+
+
+
+.data-how{
+	width: 100%;
+	padding: 0rem 1.08rem 0rem 1.05rem;
+	box-sizing: border-box;
+}
+.data-how ul{
+	width: 100%;
+}
+.data-how ul>li{
+	width: 1.62rem;
+	height: auto;
+	float: left;
+	margin-right: 0.25rem;
+	box-sizing: border-box;
+	padding: 0.34rem 0rem 0.2rem;
+	box-shadow: 0rem 0rem ;
+	text-align: center;
+	box-shadow: 0rem 0rem 0.16rem rgba(0,58,176,0.15);
+	overflow: hidden;
+	position: relative;
+}
+.data-how ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;	
+}
+.data-how ul>li>a>img:first-child{
+	width: 1.04rem;
+}
+.data-how ul>li>a>h4{
+	font-size: 0.3rem;
+	color: #ac3dbe;
+	margin-bottom: 0.04rem;
+}
+.data-how ul>li>a>span{
+	display: block;
+	width: 1.04rem;
+	height: 1px;
+	background: #3ec9e6;
+	margin: 0 auto;
+}
+.data-how ul>li>a>span:after{
+	content: "";
+	display: block;
+	width: 0.04rem;
+	height: 0.04rem;
+	border-radius: 50%;
+	border: 0.05rem solid #fff;
+	background: #3ec9e6;
+	position: absolute;
+	left: 0.75rem;
+	top: 1.78rem;
+}
+.data-how ul>li>a>img:last-of-type{
+	width: 0.43rem;
+	/*float: left;*/
+	margin-top: 0.1rem;
+}
+.data-how ul>li>a>em{
+	display: inline-block;
+	margin-top: 0.1rem;
+	font-style: normal;
+	font-size: 0.2rem;
+	/*float: right;*/
+	color: #4c6fe8;
+	font-weight: 500;
+}
+.data-how ul>li:last-child{
+	margin-right: 0rem;
+}
+.data-how ul:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*底部开始*/
+.data-foot{
+	width: 100%;
+	/*overflow: hidden;*/
+	background: #1e1e1e;
+	position:absolute;
+	bottom: 0;
+	padding: 0rem 1.14rem;
+	box-sizing: border-box;
+}
+.data-foot:after{
+	content: "";
+	display: block;
+	clear: inherit;
+}
+.data-foot ul{
+		widows: 100%;
+		height: 100%;
+}
+.data-foot ul>li{
+	width: 33.33%;
+	height: 100%;
+	/*background: red;*/
+	float: left;
+	position: relative;
+}
+.data-foot ul>li>a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.data-foot ul>li:first-child>a>img{
+	display: block;
+	width: 0.62rem;
+	margin-top: 0.1rem;
+}
+.data-foot ul>li:first-child>a>span{
+	display: block;
+	font-size: 0.2rem;
+	color: #FFFFFF;
+	margin-left: 0.1rem;
+	margin-top: -0.05rem;
+}
+.data-foot ul>li:nth-child(2)>a>img{
+	display: block;
+	width: 1.02rem;
+	/*position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;*/
+	margin: -0.34rem auto 0rem;
+}
+.data-foot ul>li:last-child>a>img{
+	display: block;
+	width: 0.62rem;
+	margin-top: 0.1rem;
+	float: right;
+}
+.data-foot ul>li:last-child>a>span{
+	display: block;
+	font-size: 0.2rem;
+	color: #FFFFFF;
+	position: absolute;
+	bottom: 0.05rem;
+	right:0.1rem;
+	top: 0.7rem;
+}

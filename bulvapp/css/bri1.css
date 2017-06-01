@@ -1,0 +1,491 @@
+*{
+	text-decoration: none;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	overflow: scroll;
+	background: #13181e;
+}
+html{
+	overflow: hidden;
+	position: relative;
+}
+/*头部开始*/
+.bri1-box{
+	width: 100%;
+	height: 1rem;
+	background: #0e121e;
+	text-align: center;
+	padding: 0.15rem 0.24rem;
+	box-sizing: border-box;
+	position: relative;
+	top: 0rem;
+	left: 0rem;
+	right: 0rem;
+	line-height: 0.7rem;	
+}
+.bri1-box a:nth-child(2) img{
+	width: 0.44rem;
+	position: absolute;
+	top: 0.25rem;
+	left: 0.25rem;
+	
+}
+.bri1-box a:nth-child(4) img{
+	width: 0.44rem;
+	position: absolute;
+	top: 0.25rem;
+	right: 0.25rem;
+	
+}
+
+.bri1-box h1{
+	font-size: 0.34rem;
+	color: #fff;
+}
+.bri1-box h1:before{
+	display: block;
+	content: "";
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	left: 2.97rem;
+	top: 0.45rem;
+}
+.bri1-box h1:after{
+	display: block;
+	content: "";
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	right: 2.97rem;
+	top: 0.45rem;
+}
+.bri1-box .bri-boxson{
+	width: 7.02rem;
+	height: 0.01rem;
+	background: #fff;
+	position: absolute;
+	top: 0rem;
+}
+.bri1-box .bri1-boxson:before{
+	display: block;
+	content: "";
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: -0.01rem;
+	left: 0rem;
+}
+.bri1-box .bri1-boxson:after{
+	display: block;
+	content: "";
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: -0.01rem;
+	right: 0rem;
+}
+.bri1-box .bri1-boxson span:before{
+	display: block;
+	content: "";
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: -0.01rem;
+	left: 0.6rem;
+}
+.bri1-box .bri1-boxson span:after{
+	display: block;
+	content: "";
+	width: 0.03rem;
+	height: 0.03rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	top: -0.01rem;
+	right: 0.6rem;
+}
+/*头部结束*/
+
+
+
+.bri1-bigbox{
+	width: 100%;
+	overflow: hidden;
+}
+.bri1-bigbox img{
+	display: block;
+	width: 100%;
+}
+.bri1-Box{
+	width: 7.25rem;
+	height: 2.84rem;
+	border-radius: 0.1rem;
+	background: #13181e;
+	margin: -1.8rem auto 0rem;
+	position: relative;
+	z-index: 2;
+	box-shadow: 0rem 0.03rem 0.1rem 0.08rem rgba(16,19,24,0.5);
+}
+.bri1-Box:after{
+	content: "";
+	width: 7.25rem;
+	height: 0.01rem;
+	background: #0f1219;
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	box-shadow: 0rem 0.03rem 0rem 0.03rem rgba(28,32,41,0.75);
+}
+.bri1-Box .bri1-Box-top{
+	width: 100%;
+	height: 1.4rem;
+	/*background: red;*/
+	text-align: center;
+	line-height: 1.4rem;
+}
+.bri1-Box .bri1-Box-top img{
+	width: 0.37rem;
+	height: 0.37rem;
+	margin-right: 0.22rem;
+}
+.bri1-Box .bri1-Box-top span{
+	font-size: 0.28rem;
+	color: #fff;
+	margin-right: 0.31rem;
+}
+.bri1-Box .bri1-Box-top em{
+	font-style: normal;
+	font-size: 0.28rem;
+	color: #39f1e5;
+}
+.bri1-Box .bri1-Box-bottom{
+	width: 100%;
+	padding: 0.55rem 0.55rem 0 0.35rem;
+	box-sizing: border-box;
+}
+.bri1-Box .bri1-Box-bottom ul{
+	width: 100%;
+	overflow: hidden;
+}
+.bri1-Box .bri1-Box-bottom ul>li{
+	width: 33.33%;
+	text-align: center;
+	overflow: hidden;
+	float: left;
+}
+.bri1-Box .bri1-Box-bottom ul>li p{
+	font-size: 0.24rem;
+	color: #39F1E5;
+}
+.bri1-Box .bri1-Box-bottom ul>li>img{
+	height: 0.2rem;
+	margin-right: 0.1rem;
+}
+.bri1-Box .bri1-Box-bottom ul>li>span{
+	font-size: 0.28rem;
+	color: #fff;
+}
+.bri1-smallBox{
+	width: 100%;
+	height: 2rem;
+	background: #13181e;
+	margin-top: -2.72rem;
+	position: relative;
+	z-index: 1;
+	border-radius: 0.1rem;
+}
+.bri1-table{
+	width: 100%;
+	height: 3.09rem;
+	background: url(../img/data-18_03.png) no-repeat;
+	background-size: contain;
+	margin-top: 0.94rem;
+	overflow: hidden;
+	position: relative;
+	/*display:none;*/
+	text-align: center;
+}
+.bri1-table h1{
+	font-size: 0.26rem;
+	color: #39f1e5;
+	margin-top: 0.15rem;
+}
+.bri1-sporet{
+	width:5.2rem;
+	height: 1.79rem;
+	margin: 0.15rem auto 0;
+	padding-top: 0.1rem;
+	box-sizing: border-box;
+	border-bottom: 1px solid #fff;
+	border-left: 1px solid #fff;
+}
+.bri1-sporet ul{
+	width: 100%;
+	height: 100%;
+}
+.bri1-sporet ul li{
+	width:0.27rem;
+	border-radius: 1.2rem;
+	float: left;
+	margin-right: 0.4rem;
+	position: relative;
+}
+.bri1-sporet ul li:first-child{
+	height: 1.28rem;
+	margin-left: 0.3rem;
+	margin-top: 0.21rem;
+	background: #61c01c;
+}
+
+.bri1-sporet ul li:first-child:after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -0.21rem;
+	left: 50%;
+	background: white;
+}
+.bri1-sporet ul li:nth-child(2){
+	height: 0.93rem;
+	margin-top: 0.56rem;
+	background: #18dd47;
+}
+.bri1-sporet ul li:nth-child(2):after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -0.21rem;
+	left: 50%;
+	background: white;
+}
+.bri1-sporet ul li:nth-child(3){
+	height: 1.19rem;
+	margin-top: 0.3rem;
+	background: #22f336;
+}
+.bri1-sporet ul li:nth-child(3):after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -0.21rem;
+	left: 50%;
+	background: white;
+}
+.bri1-sporet ul li:nth-child(4){
+	height: 1.40rem;
+	margin-top: 0.09rem;
+	background: #1bea80;
+}
+.bri1-sporet ul li:nth-child(4):after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -0.21rem;
+	left: 50%;
+	background: white;
+}
+.bri1-sporet ul li:nth-child(5){
+	height: 1.49rem;
+	background: #22f336;
+}
+.bri1-sporet ul li:nth-child(5):after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -0.21rem;
+	left: 50%;
+	background: white;
+}
+.bri1-sporet ul li:nth-child(6){
+	height: 0.95rem;
+	margin-top: 0.54rem;
+	background: #ffbf25;
+}
+.bri1-sporet ul li:nth-child(6):after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -0.21rem;
+	left: 50%;
+	background: white;
+}
+.bri1-sporet ul li:last-child{
+	height: 1.18rem;
+	margin-top: 0.31rem;
+	margin-right: 0;
+	background: #1bea80;
+}
+.bri1-sporet ul li:last-child:after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -0.21rem;
+	left: 50%;
+	background: white;
+}
+.bri1-sporet1{
+	width: 100%;
+	height: 0.26rem;
+	text-align: left;
+	margin-top: 0.08rem;
+	box-sizing: border-box;
+	padding-left: 1.57rem;
+}
+.bri1-sporet1 span{
+	font-size: 0.26rem;
+	color: #828387;
+	margin-right: 0.43rem;
+}
+.bri1-sporet1 span:first-child{
+	color: #1f6fea;
+}
+.bri1-sporet1 span:nth-child(6){
+	margin-left: 0.05rem;
+}
+.bri1-sporet1 span:last-child{
+	color: #1cace8;
+	margin-right: 0rem;
+	margin-left: -0.15rem;
+	position: relative;
+}
+.bri1-sporet1 span:last-child:after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height: 0.05rem;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.11rem;
+	left: 50%;
+	background: white;
+}
+
+.bri1-sp-left{
+	width: 0.5rem;
+	height: 1.5rem;
+	position: absolute;
+	left: 0.65rem;
+	top:0.5rem;
+}
+.bri1-sp-left h5{
+	font-size: 0.26rem;
+	color: #1cace8;
+	position: absolute;
+	top: 0;
+	left: -.09rem;	
+}
+.bri1-sp-left h5:after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height:0.05rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	right: -0.05rem;
+	top: 50%;
+}
+.bri1-sp-left h2{
+	font-size: 0.18rem;
+	color: #2954d5;
+	position: absolute;
+	top:0.25rem;
+	left: 0.1rem;
+}
+.bri1-sp-left h3{
+	font-size: 0.2rem;
+	color: #828387;
+	position: absolute;
+	top:0.63rem;
+	left: 0.03rem;
+}
+.bri1-sp-left h3:after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height:0.05rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	right: -0.05rem;
+	top: 40%;
+}
+.bri1-sp-left h4{
+	font-size: 0.2rem;
+	color: #828387;
+	position: absolute;
+	bottom:0rem;
+	left: 0.03rem;
+}
+.bri1-sp-left h4:after{
+	content: "";
+	display: block;
+	width: 0.05rem;
+	height:0.05rem;
+	border-radius: 50%;
+	background: #fff;
+	position: absolute;
+	right: -0.05rem;
+	top: 40%;
+}
+
+
+
+.bri1-foot{
+	width: 100%;
+	overflow: hidden;
+	padding: 0.4rem 0.24rem 0.15rem;
+	box-sizing: border-box;
+	position: absolute;
+	bottom:0;
+	left: 0;
+	z-index: 999;
+}
+.bri1-foot img:first-child{
+	width: 0.63rem;
+	float: left;
+}
+.bri1-foot img:last-child{
+	width: 0.47rem;
+	float: right;
+	margin-top: 0.1rem;
+}

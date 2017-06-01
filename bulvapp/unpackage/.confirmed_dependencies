@@ -1,0 +1,72 @@
+{
+  "index.html": {
+    "resources": [
+      "css/comment.css",
+      "js/rem.js",
+      "img/home-2_07.png",
+      "img/home-banner2.png",
+      "img/home-xin.png",
+      "img/home-bg1.png",
+      "img/home-hot.png",
+      "img/home-3_14.png",
+      "css/index.css",
+      "img/home-1.png",
+      "img/home-banner.png",
+      "img/home-_09.png",
+      "img/home-huodong.png",
+      "img/home-pin.png",
+      "img/home-hot1.png",
+      "img/home-4_16_14.png",
+      "img/home-4_16_16.png",
+      "img/home-5_14.png",
+      "img/home-5_16.png",
+      "img/home-4.png",
+      "img/home-3.png",
+      "img/home-6_24.png",
+      "img/home-6_21.png",
+      "img/home-6_27.png",
+      "img/images/home-bg2_03.png",
+      "img/images/home-bg3_03.png",
+      "img/images/home-new_03.png",
+      "img/home-bg2_03.png",
+      "img/home-bg3_03.png",
+      "img/home-new_03.png",
+      "img/home-7_03.png",
+      "img/home-7_05.png",
+      "img/home-7_07.png",
+      "img/home-7_01.png",
+      "img/home-7_02.png",
+      "img/new-title_03.png",
+      "newyear.html"
+    ],
+    "refer": [
+      "newyear.html"
+    ]
+  },
+  "newyear.html": {
+    "resources": [
+      "css/newyear.css",
+      "css/comment.css",
+      "js/rem.js",
+      "img/new-banner.png",
+      "img/new-bg_03.png",
+      "img/new-1_03.png",
+      "img/new-1_07.png",
+      "img/new-1_11.png",
+      "img/new-1_22.png",
+      "img/new-1_14.png",
+      "img/new-1_18.png",
+      "img/new-2_03.png",
+      "img/new-1_28.png",
+      "img/new-1_33.png",
+      "img/new-1_31.png",
+      "img/new-3_03.png",
+      "img/new-title_03.png",
+      "index.html",
+      "img/new-icon_03.png"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  }
+}

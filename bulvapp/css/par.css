@@ -1,0 +1,236 @@
+.par{
+	width: 100%;
+	height:100vh;
+	background:#FFFFFF;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+}
+body{
+	overflow: scroll;
+}
+html{
+	overflow: hidden;
+	position: relative;
+}
+.par-header{
+	width: 100%;
+	height: 0.98rem;
+	background: #0E121E;
+	position:absolute;
+	top: 0rem;
+	z-index: 1;
+}
+.par-header a{
+	width: 0.46rem;
+	height: 0.46rem;
+	position: absolute;
+	top: 0.26rem;
+	left: 0.23rem;
+}
+.par-header a img{
+	width: 100%;
+	height: 100%;
+}
+.par-header .qicai{
+	width: 2.04rem;
+	height: 0.36rem;
+	margin: 0.34rem auto 0rem;
+	position: relative;
+	text-align: center;
+	line-height: 0.36rem;
+}
+
+.par-header .baidian1{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #FFFFFF;
+	position: absolute;
+	top: 0.15rem;
+	left: 0.02rem;
+}
+.par-header span{
+	font-size: 0.34rem;
+	color: #FFFFFF;
+}
+.par-header .baidian2{
+	width: 0.06rem;
+	height: 0.06rem;
+	border-radius: 50%;
+	background: #FFFFFF;
+	position: absolute;
+	top: 0.15rem;
+	right: 0.02rem;
+}
+.par-bottom{
+	width: 100%;
+	height: 12.36rem;
+	background: #FFFFFF;
+	position: relative;
+}
+.par-bottom .box1{
+	width: 3.75rem;
+	height: 6.82rem;
+	border-radius: 0.2rem;
+    box-shadow: 0rem 0rem 0.3rem 0.05rem #EDEDED;
+    position: absolute;
+    top: 1.56rem;
+    left: 1.8rem;
+}
+.par-bottom .box2{
+	width: 4.87rem;
+	height: 5.7rem;
+	background: #2D82D3;
+	border-radius: 0.2rem;
+    position: absolute;
+    top: 2.12rem;
+    left: 1.25rem;
+}
+.par-bottom .box3{
+	width: 4.31rem;
+	height: 6.26rem;
+	background-image: url('../img/pre-2.png');
+	background-size: cover;
+	background-position: center;
+	border-radius: 0.2rem;
+	box-shadow: 0rem 0rem 0.3rem 0.05rem #EDEDED;
+    position: absolute;
+    top: 1.85rem;
+    left: 1.52rem;
+}
+.par-bottom .box3 b{
+    font-size: 0.24rem;
+    display: block;
+    margin-top: 3.5rem;
+    margin-left: 1.72rem;
+}
+.par-bottom .box3 h1{
+    font-size: 0.2rem;
+    display: block;
+    margin-top: 0.1rem;
+    margin-left: 1.36rem;
+}
+.par-bottom .box3 .left{
+	width: 0.58rem;
+	height:0.01rem;
+	background: #777777;
+	position: absolute;
+    top: 4.22rem;
+    left: 1.5rem;
+}
+.par-bottom .box3 .yuan{
+	width: 0.05rem;
+	height:0.05rem;
+	border-radius: 50%;
+	background: #262626;
+	position: absolute;
+    top: 4.2rem;
+    left:2.18rem;
+}
+.par-bottom .box3 .right{
+	width: 0.58rem;
+	height:0.01rem;
+	background: #777777;
+	position: absolute;
+    top: 4.22rem;
+    left:2.35rem;
+}
+.par-bottom .box3 .quantiao{
+	width:2.62rem;
+	height:0.32rem;
+	position: absolute;
+    top: 4.48rem;
+    left:0.96rem;
+}
+.par-bottom .box3 .quantiao span{
+	float: left;
+	width:0.32rem;
+	height:0.32rem;
+	border-radius: 50%;
+	background: red;
+    margin-right:0.25rem;
+}
+.par-bottom .box3 .quantiao span:nth-child(1){
+	background: #1D1D1D;
+}
+.par-bottom .box3 .quantiao span:nth-child(2){
+	background: #777777;
+}
+.par-bottom .box3 .quantiao span:nth-child(3){
+	background: #D6D6D6;
+}
+.par-bottom .box3 .quantiao span:nth-child(4){
+	background: #D6B084;
+}
+.par-bottom .box3 .quantiao span:last-child{
+	margin-right:0rem;
+	background: #F9D614;
+}
+.par-bottom .box3 .money{
+	font-size: 0.24rem;
+	color: red;
+	margin-top: 0.8rem;
+	margin-left: 1.63rem;
+}
+.par-bottom .box3 .dixian{
+	width: 0.48rem;
+	height: 0.03rem;
+	background: #000000;
+	margin:0.2rem auto;
+	
+	position: relative;
+}
+.par-bottom .box3 .dixian .waidian{
+	width: 0.03rem;
+	height: 0.03rem;
+	background: #000000;
+	position: absolute;
+	top: 0rem;
+	right: -0.1rem;
+}
+.par-bottom .anniu{
+	width: 2.84rem;
+	height: 0.8rem;
+	border-radius: 0.4rem;
+	background: #7A16FF;
+	position: absolute;
+	left: 2.4rem;
+	bottom: 1.86rem;
+	text-align: center;
+}
+.par-bottom .anniu a{
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+}
+.par-bottom .anniu a h1{
+	font-size: 0.22rem;
+	color:#FFFFFF;
+	margin-top: 0.18rem;
+}
+.par-bottom .anniu a h2{
+	font-size: 0.18rem;
+	color:#FFFFFF;
+}
+.par-bottom .anniu a .leftdian{
+	width: 0.06rem;
+	height:0.06rem;
+	border-radius:50%;
+	background: #FFFFFF;
+	position: absolute;
+	left:0.15rem;
+	bottom: 0.37rem;
+}
+.par-bottom .anniu a .rightdian{
+	width: 0.06rem;
+	height:0.06rem;
+	border-radius:50%;
+	background: #FFFFFF;
+	position: absolute;
+	right:0.15rem;
+	bottom: 0.37rem;
+}
+
+

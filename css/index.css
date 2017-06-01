@@ -55,70 +55,70 @@
 }
 .section:first-child .cover:nth-child(1){
     background: url("../img/1.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 0;
     top: -100%;
 }
 .section:first-child .cover:nth-child(2){
     background: url("../img/2.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 10%;
     top: 100%;
 }
 .section:first-child .cover:nth-child(3){
     background: url("../img/3.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 20%;
     top: -100%;
 }
 .section:first-child .cover:nth-child(4){
     background: url("../img/4.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 30%;
     top: 100%;
 }
 .section:first-child .cover:nth-child(5){
     background: url("../img/5.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 40%;
     top: -100%;
 }
 .section:first-child .cover:nth-child(6){
     background: url("../img/6.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 50%;
     top: 100%;
 }
 .section:first-child .cover:nth-child(7){
     background: url("../img/7.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 60%;
     top: -100%;
 }
 .section:first-child .cover:nth-child(8){
     background: url("../img/8.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 70%;
     top: 100%;
 }
 .section:first-child .cover:nth-child(9){
     background: url("../img/9.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 80%;
     top: -100%;
 }
 .section:first-child .cover:nth-child(10){
     background: url("../img/10.png") no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
     left: 90%;
     top: 100%;

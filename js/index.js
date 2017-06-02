@@ -46,7 +46,7 @@ $(function(){
                 $('.cover').animate({top:0},1000);
             }
             if(index==2){
-                $('.section').eq(1).find('.round').animate({top:'200px',opacity:'1'},500);
+                $('.section').eq(1).find('.round').animate({top:'0px',opacity:'1'},500);
                 $('.section').eq(1).find('p').eq(0).animate({opacity:'1'},500);
                 $('.section').eq(1).find('p').eq(1).animate({opacity:'1'},500);
                 $('.section').eq(1).find('p').slice(2,6).animate({opacity:'1'},500);

@@ -149,6 +149,9 @@
     border-radius: 50%;
     box-shadow: 0 0 15px 5px rgba(255,255,255,0.1);
     opacity: 0;
+    background: url("../img/zp.JPG") no-repeat;
+    background-size: 100%;
+    background-position: center;
 }
 .section:nth-child(2) .middle{
     width: 500px;
